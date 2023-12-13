@@ -1,0 +1,613 @@
+html{
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100%;
+    background-color: black;
+}
+
+:root{
+    --negro: #000;
+    --gris: #222121;
+    --celeste: #14dae0;
+    --rojo: #ca0f0f;
+    --naranja: #FF4500;
+    --blanco: #fff;
+}
+
+.body{
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Estructura Grid Responsive */
+.grid-container > *{
+    box-shadow: -1px 1px 7px 0px rgba(0, 9, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid-container{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template:  
+                    'nav'       70px
+                    'main'      auto
+                    'footer'    600px;
+    gap: 10px;
+}
+
+.c1{
+    grid-area: nav;
+    background-color: var(--negro);
+}
+
+.c2{
+    grid-area: main;
+    background-color: var(--negro)
+}
+
+.c3{
+    grid-area: footer;
+    background-color: var(--negro);
+}
+
+
+/* Estilo nav */
+/* Estilos a las cajas por iguales */
+.nav{
+    height: 100%;
+    padding: 0 20px 0px 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--gris);
+
+}
+
+.block-nav{
+    height: 55%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Iconos */
+.nav-icons{
+    height: 100%;
+    width: 40px;
+    padding-right: 50px;
+    display: flex;
+    object-fit: cover;
+}
+
+/* Enlaces */
+.block-nav-2 > ul{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.block-nav-2 > ul > li{
+    padding-left: 40px;
+    color: var(--blanco);
+}
+
+.block-nav-2 > ul > li > a{
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+
+
+/* Areas Main */
+/* Estilos a cajas main */
+.main{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+/* Caja inicio */
+.main-home{
+    width: 100%;
+    height: 450px;
+    margin-top: 8%;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #000;
+}
+
+.home{
+    width: 50%;
+    display: flex;
+}
+
+/* Imagen */
+.home-img{
+    width: 90%;
+    height: 45%;
+    display: flex;
+    object-fit: cover;
+}
+
+.home-img img{
+    border-radius: 15px;
+}
+
+/* texto */
+.m2{
+    margin-top: 5%;
+    margin-left: -5%;
+    text-align: left;
+    flex-direction: column;
+}
+
+.m2 h1{
+    font-size: 50px;
+    color: var(--blanco);
+}
+
+.m2 h2{
+    font-size: 25px;
+    color: var(--blanco);
+    
+}
+
+.m2 h2 span{
+    color: var(--celeste);
+    
+}
+
+.m2 h3{
+    font-size: 18px;
+    color: var(--celeste);
+    
+}
+
+.m2 p{
+    font-size: 15px;
+    padding-top: 15px;
+    line-height: 1.5;
+    color: var(--blanco);
+}
+
+
+/* Bottom descargar curriculum */
+.botton{
+    margin-top: 60px;
+    display: flex;
+}
+
+.botton button{
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    background: transparent;
+    color: var(--celeste);
+    padding: 10px 35px;
+    border-radius: 10px;
+    border: 1px solid var(--celeste);
+}
+
+
+/* Caja que hablas sobre mi */
+.main-about-me{
+    height: 750px;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: var(--gris);
+}
+
+.about-me{
+    width: 50%;
+    height: 100%;
+    margin-top: 10%;
+    display: flex;
+}
+
+/* imagen */
+.about-me-img{
+    width: 85%;
+    height: 70%;
+    margin-left: 10px;
+    margin-top: 35px;
+    display: flex;
+    object-fit: cover;
+}
+
+.about-me-img img{
+    border-radius: 15px;
+}
+
+.i1{
+    justify-content: left;
+}
+
+/* texto */
+.i2{
+    flex-direction: column;
+    text-align: left;
+    color: var(--blanco);
+}
+
+.i2 h2{
+    font-size: 35px;
+    padding-bottom: 20px;
+    color: var(--celeste);
+}
+
+.i2 p{
+    font-size: 15px;
+    line-height: 1.3;
+    padding-bottom: 20px;
+    color: var(--blanco);
+}
+
+
+
+/* Caja de habilidades */
+/* Contenedores */
+.main-skills{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--negro);
+}
+
+.skills-info{
+    width: 100%;
+    margin-top: 100px;
+    text-align: left;
+}
+
+
+/* Texto */
+.skills-info h2{
+    font-size: 35px;
+    padding-bottom: 20px;
+    color: var(--celeste);
+}
+
+.skills-info p{
+    font-size: 15px;
+    line-height: 1.3;
+    padding-bottom: 20px;
+    color: var(--blanco);
+}
+
+/* Area de las imagenes de las herramientas que uso */
+.skills-img{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.flex-img{
+    height: 130px;
+    margin: 40px 0 40px 0 ;
+    justify-content: space-between;
+    display: flex;
+    object-fit: cover;
+    order: 1;
+}
+
+/* Estilo por cada imagen */
+.img-1{
+    flex-grow: 1;
+    flex-basis: 30%;
+}
+
+.img-2{
+    flex-grow: 1;
+    flex-basis: 30%;
+}
+
+.img-3{
+    flex-grow: 1;
+    flex-basis: 30%;
+}
+
+.img-4{
+    flex-grow: 1;
+    flex-basis: 30%;
+}
+
+.img-5{
+    flex-grow: 1;
+    flex-basis: 30%;
+}
+
+.img-6{
+    flex-grow: 1;
+    flex-basis: 30%;
+}
+
+
+/* Area donde muestro los proyectos */
+.main-projects{
+    width: 100%;
+    height: 1500px;
+    padding-top: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: var(--gris);
+}
+
+.container-projects{
+    width: 98%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.flex-p1{
+    height: 12%;
+}
+
+.flex-p2{
+    height: 94%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* Estilo a textos */
+.container-projects h2{
+    font-size: 35px;
+    padding-bottom: 20px;
+    color: var(--celeste);
+}
+
+.container-projects p{
+    font-size: 15px;
+    line-height: 1.3;
+    padding-bottom: 20px;
+    color: var(--blanco);
+}
+
+/* Area de proyectos */
+.projects{
+    width: 100%;
+    height: 22%;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.right{
+    justify-content: right;
+}
+
+
+
+/* Imagenes de los proyectos */
+.projects-img{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    box-shadow: 0 0 10px 3px var(--celeste);
+    object-fit: cover;
+}
+
+.projects-img img{
+    width: 100%;
+}
+
+
+
+/* Información de los proyectos */
+.flex-projects{
+    height: 100%;
+    width: 35%;
+    padding-left: 25px;
+    text-align: center;
+}
+
+.flex-projects h3{
+    font-size: 25px;
+    padding-bottom: 15px;
+    color: var(--naranja);
+}
+
+.flex-projects p{
+    font-size: 15px;
+    color: var(--blanco);
+}
+
+.flex-projects h5{
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: -20px;
+    color: var(--celeste);
+}
+
+.text-right{
+    padding-right: 25px;
+    text-align: center;
+}
+
+/* Bottom */
+.botton-projects{
+    margin-top: 165px;
+    background: transparent;
+}
+
+.botton-projects button{
+    color: var(--celeste);
+    padding: 10px 35px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #14dae0;
+    background: transparent;
+}
+
+/* FOOTER */
+/* Caja Grid */
+.container-contact{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template: 
+                    'contacto formulario' 450px
+                    'autor autor' auto;
+    gap: 40px;
+}
+
+.g1{
+    width: 400px;
+    grid-area: contacto;
+}
+
+.g2{
+    width: 500px;
+    grid-area: formulario;
+
+}
+
+.g3{
+    grid-area: autor;
+}
+
+.flex-contact{
+    margin-top: 15%;
+}
+
+
+/* Cajas Contacto */
+.contact-info{
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.contact-info h2{
+    font-size: 30px;
+    padding-bottom: 25px;
+    color: var(--celeste);
+}
+
+.contact-info p{
+    font-size: 15px;
+    padding-bottom: 15px;
+    color: var(--blanco)
+}
+
+/* Formulario input */
+
+.contact-input{
+    width: 100%;
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: left;
+}
+
+.contact-input p{
+    padding-left: 5px;
+    color: var(--blanco);
+    text-align: left;
+}
+
+.contact-input input{
+    width: 80%;
+    height: 30px;
+    border: 1px solid var(--naranja);
+    border-radius: 5px;
+}
+
+.contact-input textarea{
+    width: 80%;
+    height: 120px;
+    border: 1px solid var(--naranja);
+
+    border-radius: 5px;
+}
+
+.contact-input button{
+    width: 80%;
+    padding: 10px;
+    color: var(--celeste);
+    font-size: 15px;
+    margin-top: -10px;
+    border: 2px solid var(--celeste);
+    border-radius: 10px;
+    background: transparent;
+
+}
+
+/* Pleceholder */
+.contact-input input::placeholder{
+    padding-left: 10px;
+}
+
+.contact-input textarea::placeholder{
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+/* Derechos de autor */
+.g3 p{
+    font-size: 15px;
+    color: var(--blanco);
+}
+
+
+/* Efectos Hover */
+/* Caja nav */
+.nav-icons img:hover{
+    transform: scale(1.3);
+}
+
+.info a:hover{
+    color: var(--naranja);
+}
+
+.botton button:hover{
+    transform: scale(1.1);
+    color: var(--rojo);
+    border: 1px solid var(--rojo);
+}
+
+/* Caja de habilidades */
+.flex-img img:hover{
+    transform: scale(1.2);
+}
+
+/* Caja de proyectos */
+.flex-projects:hover{
+    background-color: var(--negro);
+}
+
+.botton-projects button:hover{
+    transform: scale(1.05);
+    color: var(--rojo);
+    border: 1px solid var(--rojo);
+}
+
+/* Caja de contacto */
+.contact-input button:hover{
+    transform: scale(1.05);
+    color: var(--rojo);
+    border: 1px solid var(--rojo);
+}

@@ -1,110 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Fitness World</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="David Murillo">
-    <meta name="description" content="Productos para deportistas">
-    <meta name="keywords" content="deportes,suplementos,aminoacidos,creatina,proteinas,Gimnasio">
-    <link rel="icon" sizes="192x192" href="https://img.freepik.com/vector-premium/logotipo-gimnasio-diseno-vectores-logotipo-fitness-adecuado-equipos-deportivos-fitness-marcas-productos-suplementos-corporales-salud-corporal_557439-6331.jpg?w=740">
-    <style>
-        body {
-            background-color: rgb(233, 47, 0);
-        }
-        .encabezado {
-            background-color: rgb(231, 12, 12);
-            padding: 25px;
-        }
-        .marcas {
-            background-color: rgb(255, 255, 255);
-        }
-         
-    </style>
+    <meta name="description" content="portafolio personal">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>David Murillo</title>
 </head>
-<body>
-    <div class="encabezado">
-       <header>
-        <nav >
-        <center>
-        <h1 style="color: aliceblue;"><i>Fitness World</i></h1>
-        
-            <table>
-                <tr>
-                    <th><a style="color: aliceblue;" href="index.html">Inicio</a></th>
-                    <th><a style="color: aliceblue;" href="proteinas.html">Proteinas</a></th>
-                    <th><a style="color: aliceblue;" href="creatina.html">Creatina</a></th>
-                    <th><a style="color: aliceblue;" href="#Pre entreno">Pre entrenos</a></li></th>
-                    <th><a style="color: aliceblue;" href="#vitaminas y minerales">Vitaminas y minerales</a></th>
-                    <th><a style="color: aliceblue;" href="#contacto">Contacto</a></li></th>
-                </tr>
-            </table></center>
+<body class="body">
+    <div class="grid-container">
+        <nav class="caja c1">
+            <div class="nav">
+                <div class="block-nav block-nav-1">
+                    <div class="nav-icons"><img src="img/linkedin.png" alt=""></div>
+                    <div class="nav-icons"><img src="img/instagram.png" alt=""></div>
+                    <div class="nav-icons"><img src="img/discord.png" alt=""></div>
+                    <div class="nav-icons"><img src="img/github.png" alt=""></div>
+                </div>
+                <div class="block-nav block-nav-2">
+                    <ul class="info">
+                        <li><a href="#sobre-mi">Sobre mi</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        </header>
-    </div>
-    
-    <div style="background-color: aliceblue;">
-    <center><img src="https://static.wixstatic.com/media/a4b8b2_4ae9c2bbb356470fbe2356d920b8d5aa~mv2.jpg/v1/fill/w_1349,h_650,al_c,q_85,enc_auto/a4b8b2_4ae9c2bbb356470fbe2356d920b8d5aa~mv2.jpg" 
-    alt="La mejor variedad y precios" title="La mejor variedad y precios" width="1200" height="500">
-    <p></p>
-    <img src="https://img.freepik.com/vector-premium/icono-billetera-dibujos-animados-vector-estilo-comico-pictograma-ilustracion-signo-monedero-dinero-concepto-efecto-salpicadura-negocio-billetera_157943-10149.jpg?w=740" 
-    alt="precios" title="precios" width="80" height="80">
-    <h2>Buenos precios</h2>
-    <p>Tenemos los mejores precios en el mercado</p>
+        <article class="caja c2">
+            <div class="main">
+                <div class="main-home">
+                    <div class="home m1">
+                        <div class="home-img"><img src="./img/me.jpg" alt=""></div>
+                    </div>
+                    <div class="home m2">
+                        <h3>¡Hey!, Me llamo</h3>
+                        <h1>David Murillo</h1>
+                        <h2>y soy <span>web developer</span></h2>
+                        <p>Soy un joven apasionado por el desarrollo web. Adoro el diseño y la experiencia como programador,
+                            y veo cada proyecto como una nueva aventura.
+                        </p>
+                        <div class="botton">
+                            <button>Download CV</button>
+                        </div>
+                    </div>
+                </div>
 
-    <img src="https://img.freepik.com/vector-premium/icono-cohete-estilo-comic-ilustracion-vector-dibujos-animados-lanzamiento-nave-espacial-sobre-fondo-blanco-aislado-concepto-negocio-efecto-salpicadura-sputnik_157943-10734.jpg?w=740" 
-    alt="delivery" title="delivery" width="80" height="80">
-    <h2>Entrega a tiempo</h2>
-    <p>delivery rapido y seguros 100% garantizado</p></div></center>
+                <div class="main-about-me">
+                    <div class="about-me i1">
+                        <div class="about-me-img"><img src="img/david.png" alt=""></div>
+                    </div>
+                    <div class="about-me i2" id="sobre-mi">
+                        <h2>Acerca de mi</h2>
+                        <p>
+                            A pesar de que llevo 6 meses programando como desarrollador Frontend, me desenvuelto mui bien a tal punto que 
+                            mis ganas de aprender son insaciables. He trabajado en varios proyectos, aunque todos personales, pero me ha 
+                            ayudado a mejorar mis habilidades y pienso seguir expandiendo mis conocimientos, hasta donde más pueda, Me encanta la programación y todo lo relacionado con el desarrollo web.
+                        </p>
+                        <p>
+                            además estoy en la universidad, donde estudio una licenciatura en la gestión educativa y empresarial enfocada 
+                            en la informática, por lo que tengo la oportunidad de combinar mis conocimientos en programación con mis estudios universitarios. Durante mi tiempo en la universidad, he aprendido sobre gestión de proyectos, análisis de datos y diseño de sistemas de información.
+                        </p>
+                        <p>
+                            En mi tiempo libre, disfruto explorando nuevas tecnologías y participando en comunidades de desarrollo. 
+                            Me encanta compartir mis conocimientos con otros y aprender de sus experiencias. Estoy emocionado de seguir creciendo como desarrollador Frontend y enfrentar nuevos desafíos en el futuro.
+                        </p>
+                    </div>
+                </div>
 
+                <div class="main-skills" id="habilidades">
+                    <div class="skills-info">
+                        <h2>Skills</h2>
+                        <p>Lenguajes y tecnologías que uso</p>
+                    </div>
+                    <div class="skills-img">
+                        <div class="flex-img img-1"><img src="img/html-5.png" alt=""></div>
+                        <div class="flex-img img-2"><img src="img/css-3.png" alt=""></div>
+                        <div class="flex-img img-3"><img src="img/js.png" alt=""></div>
+                        <div class="flex-img img-4"><img src="img/python.png" alt=""></div>
+                        <div class="flex-img img-5"><img src="img/git.png" alt=""></div>
+                        <div class="flex-img img-6"><img src="img/github.png" alt=""></div>
+                    </div>
+                </div>
 
-    <div class="marcas" style="color: rgb(0, 0, 0);"> 
-        <center>
-           <h1>Marcas</h1>
-            <h3>Las mejore marcas reconocidas en el mundo</h3> 
-            <img src="https://seeklogo.com/images/N/nutrex-research-logo-9461FE3AF9-seeklogo.com.png" 
-            alt="nutrex" title="nutrex" width="200" height="100"> 
-            <img src="https://desuples.mx/images/feature_variant/10/CELLUCORLOGO.gif" 
-            alt="cellucor" title="celuccor" width="200" height="100">
-            <img src="https://fitlab.com.pa/wp-content/uploads/2021/07/muscletech_brand.jpg" 
-            alt="muscletech" title="muscletech" width="200" height="100">
-            <img src="https://upload.wikimedia.org/wikipedia/en/archive/0/05/20221129000319%21Myprotein_logo.png" 
-            alt="my protein" title="my protein" width="200" height="100">
-            <img src="https://www.madeinsheffield.org/wp-content/uploads/2022/12/SBD-logo.png" 
-            alt="sbd" title="sbd" width="200" height="100">
-        </center>
-    </div>
+                <div class="main-projects" id="proyectos">
+                    <div class="container-projects flex-p1">
+                        <h2>Proyectos</h2>
+                        <p>Estos son los proyectos que he desarrollado</p>
+                    </div>
+                    <div class="container-projects flex-p2">
+                        <div class="projects">
+                            <div class="projects-img"><img src="img/p_1.png" alt=""></div>
+                            <div class="flex-projects">
+                                <h3>Proyecto</h3>
+                                <p>Login moderno y dinamico</p>
+                                <h5>HTML5/CSS3</h5>
+                                <div class="botton-projects"><button>Ver sitio</button></div>
+                            </div>
         
-    <div style="color: rgb(255, 255, 255);"><center>
-        <table >
-                <th><h3>Todo sobre Proteinas</h3></th>
-                <th><h3>Todo sobre Creatina</h3></th>
-                <th><h3>Todo sobre Aminoacidos</h3></th>
-                <th><h3>Todo sobre Pree entrenos</h3></th>
-            </tr>
-            <tr>
-                <td><iframe src="https://youtu.be/R0eDO4bNqsk" frameborder="0"></iframe></td>
-                <td><iframe src="https://www.youtube.com/watch?v=LT8nIfPjjc4" frameborder="0"></iframe></td>
-                <td><iframe src="https://youtu.be/5QfLfz329jI" frameborder="0"></iframe></td>
-                <td><iframe src="https://youtu.be/5TzdVayEiqI" frameborder="0"></iframe></td>
-            </tr>
-        </table></center></div>
+                        </div>
+        
+                        <div class="projects right">
+                            <div class="flex-projects text-right">
+                                <h3>Proyecto</h3>
+                                <p>Mi portafolio personal</p>
+                                <h5>HTML5/CSS3</h5>
+                                <div class="botton-projects"><button>Ver sitio</button></div>
+                            </div>
+                            <div class="projects-img x1"><img src="img/p_2.png" alt=""></div>
+                        </div>
+        
+                        <div class="projects">
+                            <div class="projects-img"><img src="img/p_3.png" alt=""></div>
+                            <div class="flex-projects">
+                                <h3>Proyecto</h3>
+                                <p>Tienda de ropa de gimnasio</p>
+                                <h5>HTML5/CSS3</h5>
+                                <div class="botton-projects"><button>Ver sitio</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-   <div class="ultimo" id="contacto" style="color: rgb(255, 255, 255);">
-    <form action="grabar_datos.php" method="post" enctype="multipart/form-data">
-        <fieldset>
-            <legend>Contacto</legend>
-            <label for="nombre">Nombre: </label>
-            <input type="text" id="nombre" name="nombre"><br>
-            <label for="apellido">Apellido: </label>
-            <input type="text" id="appelido" name="apellido"><br>
-            <label for="email">Email*: </label>
-            <input type="email" id="email" name="correo electronico" required><br>
-            <p>Escribe un mensaje: </p>
-            <textarea type="texto" id="texto" name="buzon de mensaje" cols="30" rows="10" placeholder="...."></textarea><br>
-            <input type="submit" name="enviar" value="Enviar">
-        </fieldset>
-    </form>
-   </div>
-
+        </article>
+        <footer class="caja c3" id="contacto">
+            <div class="container-contact">
+                <div class="flex-contact g1">
+                    <div class="contact-info">
+                        <h2>Contacto</h2>
+                        <p>Completa el siguiente formulario y estaré en contacto contigo lo antes posible</p>
+                        <p>david.josue.murillo23@gmail.com</p>
+                        <p>Tel  +507 64224268</p>
+                    </div>
+                </div>
+    
+                <div class="flex-contact g2">
+                    <div class="contact-input"><p>Nombre</p><input type="text" placeholder="Nombre" required></div>
+                    <div class="contact-input"><p>Email</p><input type="email" placeholder="Email" required></div>
+                    <div class="contact-input"><p>Telefono</p><input type="text" placeholder="(+000) Teléfono"></div>
+                    <div class="contact-input"><p>Mensaje</p><textarea name="mensaje" placeholder="Mensaje"></textarea></div>
+                    <div class="contact-input"><button>Enviar</button></div>
+                </div>
+                <div class="flex-contact g3">
+                    <p>2023 David Murillo</p>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
